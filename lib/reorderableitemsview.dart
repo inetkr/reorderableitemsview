@@ -291,7 +291,6 @@ class _ReorderableListContentState extends State<_ReorderableListContent>
   @override
   void didChangeDependencies() {
     _scrollController = widget.scrollController ??
-        PrimaryScrollController.of(context) ??
         ScrollController();
     super.didChangeDependencies();
   }
